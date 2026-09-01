@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de inscripción al gimnasio</title>
+</head>
+<body>
+
+<h1>Formulario de inscripción al gimnasio</h1>
+
+<form action="respuestaFormulario.html" method="get">
+
+<h2>Datos personales</h2>
+<ul>
+    <li>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required>
+    </li>
+    <li>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required>
+    </li>
+    <li>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+    </li>
+    <li>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="12" max="100">
+    </li>
+</ul>
+
+<h2>Datos de inscripción</h2>
+<ul>
+    <li>
+        <label>Sexo:</label><br>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="femenino" name="sexo" value="femenino">
+        <label for="femenino">Femenino</label>
+    </li>
+
+    <li>
+        <label for="actividad">Actividad que querés realizar:</label><br>
+        <select id="actividad" name="actividad">
+            <option value="musculacion">Musculación</option>
+            <option value="crossfit">CrossFit</option>
+            <option value="spinning">Spinning</option>
+            <option value="yoga">Yoga</option>
+            <option value="funcional">Entrenamiento funcional</option>
+        </select>
+    </li>
+
+    <li>
+        <label for="turno">Turno preferido:</label><br>
+        <select id="turno" name="turno">
+            <option value="manana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+        </select>
+    </li>
+
+    <li>
+        <label>Objetivo:</label><br>
+        <input type="radio" id="bajar-peso" name="objetivo" value="bajar-peso">
+        <label for="bajar-peso">Bajar de peso</label>
+
+        <input type="radio" id="ganar-musculo" name="objetivo" value="ganar-musculo">
+        <label for="ganar-musculo">Ganar masa muscular</label>
+
+        <input type="radio" id="mantenerse" name="objetivo" value="mantenerse">
+        <label for="mantenerse">Mantenerme en forma</label>
+    </li>
+
+    <li>
+        <input type="checkbox" id="novedades" name="novedades">
+        <label for="novedades">Quiero recibir novedades y promociones por email</label>
+    </li>
+</ul>
+
+<h2>Confirmación</h2>
+
+<input type="checkbox" id="terminos" name="terminos" required>
+<label for="terminos">Acepto los términos y condiciones del gimnasio</label>
+
+<br><br>
+
+<button type="submit">Inscribirme</button>
+<button type="reset">Limpiar formulario</button>
+
+
+</form>
+
+</body>
+</html>

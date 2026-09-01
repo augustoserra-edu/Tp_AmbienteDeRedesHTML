@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html> <head> <title>Preguntas HTTP</title> </head>
+
+<body>
+
+<h1>Preguntas y respuestas sobre HTTP</h1>
+
+<h2>1. ¿Sobre qué protocolo de transporte está montado el protocolo HTTP?</h2>
+<p>
+    HTTP/1.1 y HTTP/2 utilizan TCP como protocolo de transporte.
+    HTTP/3 utiliza QUIC, que funciona sobre UDP.
+</p>
+
+<h2>2. ¿Cuáles son los clientes HTTP y los servidores HTTP más utilizados?</h2>
+<p>
+    Los clientes HTTP más utilizados son los navegadores web como Chrome,
+    Firefox y Edge, cURL y las librerías HTTP de distintos lenguajes de programación.
+</p>
+
+<p>
+    Los servidores HTTP más utilizados son Apache, Nginx, Microsoft IIS
+    y servidores integrados en aplicaciones como Node.js.
+</p>
+
+<h2>3. ¿Qué verbos admite un comando en el requerimiento HTTP?</h2>
+<p>
+    Los principales métodos HTTP son:
+</p>
+
+<ul>
+    <li>GET: obtener o consultar un recurso.</li>
+    <li>POST: crear un recurso o enviar datos al servidor para ser procesados.</li>
+    <li>PUT: crear o reemplazar completamente un recurso existente.</li>
+    <li>DELETE: eliminar un recurso.</li>
+    <li>PATCH: modificar parcialmente un recurso.</li>
+</ul>
+
+<h2>4. ¿Qué contenido lleva el body de un requerimiento HTTP?</h2>
+<p>
+    El body de un requerimiento HTTP contiene los datos que el cliente envía al servidor.
+    Puede contener diferentes tipos de información, como texto, JSON, formularios,
+    archivos, imágenes, etc. No todos los requerimientos HTTP tienen body;
+    por ejemplo, normalmente un GET no lo utiliza.
+</p>
+
+<h2>5. ¿Qué diferencia existe entre un URL y un URI?</h2>
+<p>
+    Un URI (Uniform Resource Identifier) es un identificador de un recurso.
+    Un URL (Uniform Resource Locator) es un tipo de URI que, además de identificar
+    el recurso, indica dónde encontrarlo y cómo acceder a él.
+</p>
+
+<p>
+    Ejemplo:
+</p>
+
+<p>
+    https://www.ejemplo.com/productos/123
+</p>
+
+<p>
+    Es un URL y también un URI.
+</p>
+
+<h2>6. ¿Cómo se almacena información relacionada con las respuestas HTTP?</h2>
+<p>
+    La información de las respuestas HTTP puede almacenarse mediante una caché HTTP.
+    La caché permite guardar temporalmente recursos y reutilizarlos en futuras solicitudes,
+    evitando tener que solicitarlos nuevamente al servidor cuando todavía son válidos.
+</p>
+
+<h2>7. ¿Qué significa HTTP sobre conexiones preexistentes?</h2>
+<p>
+    Significa que una conexión de red previamente establecida puede reutilizarse
+    para enviar múltiples peticiones y respuestas HTTP, evitando crear una nueva
+    conexión para cada petición. Esto mejora el rendimiento y reduce la latencia.
+</p>
+
+<h2>8. ¿Qué significa Virtual Hosting?</h2>
+<p>
+    Virtual Hosting permite alojar múltiples sitios web o dominios en un mismo
+    servidor físico o dirección IP, diferenciándolos mediante información de la
+    petición HTTP, como el encabezado Host.
+</p>
+
+<h2>9. ¿Qué significa caché por ETag?</h2>
+<p>
+    ETag es un identificador que representa una versión específica de un recurso.
+    Cuando el cliente solicita nuevamente el recurso, puede enviar el ETag que tiene
+    mediante If-None-Match. Si el recurso no cambió, el servidor responde con
+    304 Not Modified y el cliente puede utilizar la copia que ya tiene en caché.
+</p>
+
+<h2>10. ¿Por qué HTTP se considera STATELESS?</h2>
+<p>
+    HTTP se considera stateless porque cada petición es independiente y el protocolo
+    no mantiene automáticamente información sobre las peticiones anteriores del cliente.
+    Si una aplicación necesita mantener información entre peticiones, puede utilizar
+    mecanismos como cookies, sesiones o tokens.
+</p>
+
+<h2>11. ¿Qué nueva versión de HTTP se está usando para mejorar la velocidad de la WEB?</h2>
+<p>
+    HTTP/3 se utiliza para mejorar el rendimiento de la Web. Utiliza QUIC como protocolo
+    de transporte, y QUIC funciona sobre UDP. QUIC incorpora mecanismos de confiabilidad,
+    control de congestión y seguridad (TLS), que tradicionalmente estaban asociados
+    a TCP/TLS.
+</p>
+
+<h2>12. ¿Cómo va a mejorar el comportamiento de una aplicación WEB en ambientes ruidosos o de débil conexión?</h2>
+<p>
+    HTTP/3 utiliza QUIC, que mejora el comportamiento en conexiones inestables porque
+    permite manejar de forma independiente diferentes flujos de datos. Si se pierde
+    un paquete de un flujo, no es necesario bloquear los demás flujos esperando su
+    retransmisión. Esto reduce la latencia y mejora el rendimiento en redes con pérdida
+    de paquetes o alta inestabilidad.
+</p>
+
+</body> 
+</html>
