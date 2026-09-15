@@ -1,0 +1,7 @@
+.calculadora { width: 48%; box-sizing: border-box; margin: 40px auto; padding: 20px 3.3%; background-color: #ddd; }
+#display { width: 100%; height: 46px; font-size: 24px; }
+.teclado { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px 5%; background-color: lightblue; padding: 30px 3% 55px; }
+.teclado button { min-height: 34px; }
+.acciones { display: grid; grid-template-columns: 1fr 1fr; background-color: lightyellow; padding: 10px 10% 30px; gap: 2px; }
+.acciones button { min-height: 50px; }
+@media (max-width: 800px) { .calculadora { width: 95%; } .acciones { padding: 10px; } }

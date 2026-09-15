@@ -1,0 +1,9 @@
+body { margin: 0; font-size: 24px; }
+.contenedor { width: 90%; margin: auto; background-color: lightyellow; display: flow-root; }
+h1 { margin: 0; font-size: 1em; }
+.columna { float: left; width: 17%; margin: .5%; padding: 3%; box-sizing: border-box; background-color: lightblue; overflow-wrap: break-word; }
+.columna img { display: block; width: 100%; height: auto; margin: auto; }
+footer { margin: 16px; font-size: 16px; }
+@media (max-width: 1080px) { .columna { width: 30%; margin: 1%; } }
+@media (max-width: 600px) { .columna { width: 46%; margin: 2%; } }
+@media (max-width: 400px) { .columna { width: 96%; } }

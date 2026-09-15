@@ -1,0 +1,5 @@
+form { width: 80%; min-height: 310px; margin: auto; background-color: lightblue; display: flex; flex-direction: column; }
+h2 { margin: 0 0 10px; }
+.campos { padding: 0 10px; }
+.acciones { margin-top: auto; text-align: center; padding: 30px; }
+@media (max-width: 600px) { form { width: 100%; } }

@@ -1,0 +1,3 @@
+.controles { justify-content: space-around; }
+.controles button { width: 30%; }
+@media (max-width: 600px) { .controles button { width: 100%; } }

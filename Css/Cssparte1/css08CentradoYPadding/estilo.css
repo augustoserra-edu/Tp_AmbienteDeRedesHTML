@@ -1,0 +1,8 @@
+body { font-size: 32px; }
+h1 { font-size: 2em; }
+.caja { width: 50%; margin: auto; }
+.sin-padding { background-color: lightblue; }
+.con-padding { background-color: lightgreen; padding-left: 10%; padding-right: 10%; }
+.con-border-box { background-color: beige; padding-left: 10%; padding-right: 10%; box-sizing: border-box; }
+footer { font-size: 16px; margin-top: 20px; }
+@media (max-width: 600px) { body { font-size: 16px; } }

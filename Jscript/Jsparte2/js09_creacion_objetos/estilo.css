@@ -1,0 +1,39 @@
+button {
+    background-color: lightblue;
+}
+
+#contenedor {
+    width: 60%;
+    height: 50vh;
+    margin: 20vh auto 0;
+    padding: 40px;
+    overflow: auto;
+    background-color: lightyellow;
+}
+
+.elemento {
+    width: 50%;
+    min-height: 98px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+.elemento h1 {
+    font-size: 32px;
+    overflow-wrap: anywhere;
+}
+
+@media(max-width:600px) {
+    #contenedor {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .elemento {
+        width: 100%;
+    }
+
+    .elemento h1 {
+        font-size: 24px;
+    }
+}

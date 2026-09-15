@@ -1,0 +1,7 @@
+body { margin: 0; font-size: 32px; }
+.contenedor { width: 80%; height: 500px; margin: auto; padding: 40px; box-sizing: border-box; background-color: lightblue; border: 1px solid black; }
+.ventana { width: 60%; height: 400px; padding: 30px; box-sizing: border-box; overflow-y: scroll; border: 3px solid red; background-color: lightgray; background-image: url('../imagenes/colores.svg'); background-repeat: no-repeat; background-position: center; background-size: cover; background-attachment: scroll; }
+/* scroll fija el fondo a la caja mientras su contenido se desplaza. */
+
+footer { margin: 16px; font-size: 16px; }
+@media (max-width: 600px) { .contenedor { padding: 20px; } .ventana { width: 100%; padding: 15px; } }

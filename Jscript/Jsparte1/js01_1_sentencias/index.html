@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sentencias simples en JavaScript</title>
+<link rel="stylesheet" href="../base.css">
+</head>
+<body>
+<!-- Los scripts se ejecutan en este orden durante la lectura del HTML. -->
+<script>
+alert('1. Este mensaje se muestra antes del primer texto HTML. La ejecución se detiene hasta cerrar la alerta.');
+</script>
+<h1>Texto 1 escrito directamente en HTML.</h1>
+<script>
+// En este ejercicio se utiliza document.write durante la carga del documento.
+document.write('<h1>Texto 2. Mensaje escrito desde JavaScript utilizando el método write().</h1>');
+document.write('<h2>No reemplaza el documento porque todavía se está leyendo el HTML.</h2>');
+alert('3. Esta alerta se ejecuta después del Texto 2 y antes del Texto 4.');
+</script>
+<h1>Texto 4 escrito en HTML después de presentar el alert("3").</h1>
+<script>
+document.write('<h1>Texto 5. Otra escritura con el método write() aplicado al documento.</h1>');
+document.write('<h2>El contenido se incorpora en la posición de este script durante la carga.</h2>');
+</script>
+<h2>Las sentencias se ejecutan en orden; cada alerta pausa la ejecución hasta que se cierra.</h2>
+<footer><a href="../index.html">Volver a JavaScript · Parte 1</a></footer>
+</body>
+</html>

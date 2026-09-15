@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+input,
+button,
+select {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+footer {
+    margin: 24px 8px;
+}
+
+.mensaje {
+    margin: 8px;
+    overflow-wrap: anywhere;
+}
+
+.mensaje:empty {
+    display: none;
+}
+
+input[aria-invalid="true"] {
+    outline: 2px solid #a00000;
+}

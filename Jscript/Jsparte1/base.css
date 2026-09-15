@@ -1,0 +1,8 @@
+body { margin: 8px; }
+button, input { max-width: 100%; box-sizing: border-box; }
+button { cursor: pointer; }
+footer { margin-top: 32px; font-size: 16px; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.mensaje { color: #a00000; }
+.mensaje:empty { display: none; }
+.controles { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }

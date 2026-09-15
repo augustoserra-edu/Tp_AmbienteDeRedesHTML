@@ -1,0 +1,40 @@
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+form {
+    width: 60%;
+    margin: auto;
+    min-height: 240px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+label,
+input {
+    display: block;
+}
+
+input {
+    width: 200px;
+    min-height: 30px;
+    margin: 10px 0;
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+
+.acciones button {
+    width: 30%;
+    min-height: 30px;
+}
+
+@media(max-width:600px) {
+    form {
+        width: 95%;
+    }
+}

@@ -1,0 +1,12 @@
+body { margin: 0; }
+.contenedor { position: relative; width: 90%; height: 1500px; margin: auto; background-color: lightblue; }
+h1 { font-size: 20px; margin: 0; }
+h2 { font-size: 24px; margin: 0; }
+p { margin: 0; }
+.interno { position: absolute; overflow: auto; }
+.uno { left: 10%; top: 12%; width: 30%; height: 35%; background-color: #00eab1; }
+.dos { left: 52%; top: 56%; width: 35%; min-height: 25%; background-color: palegreen; transform: rotate(10deg); }
+.dos img { width: 23%; height: auto; vertical-align: top; }
+.tres { left: 27.5%; top: 35%; width: 45%; height: 45%; z-index: 2; background-color: rgba(169, 169, 169, .65); }
+.volver { margin: 16px; }
+@media (max-width: 600px) { .contenedor { height: 1000px; } h2 { font-size: 18px; } .interno { overflow-wrap: anywhere; } }

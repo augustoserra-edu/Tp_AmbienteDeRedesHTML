@@ -1,0 +1,15 @@
+h1 {
+    font-size: 2em;
+    color: darkblue;
+    text-align: center;
+    background-color: aquamarine;
+}
+p {
+    font-size: 1em;
+    text-align: left;
+    color: blue;
+    font-style: italic;
+    border-top: thin solid blue;
+    border-bottom: thin solid blue;
+}
+

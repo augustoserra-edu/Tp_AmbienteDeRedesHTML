@@ -1,0 +1,10 @@
+body { margin: 0; }
+.menu, .menu ul { list-style: none; margin: 0; padding: 0; }
+.menu { display: flex; width: 900px; max-width: 100%; font-family: Arial, sans-serif; font-size: 26px; }
+.menu > li { position: relative; width: 20%; }
+.menu a, .menu button { display: block; width: 100%; box-sizing: border-box; padding: 10px; background-color: #315187; color: lightyellow; text-align: left; font: inherit; text-decoration: none; border: 0; cursor: pointer; overflow-wrap: anywhere; }
+.menu ul { position: absolute; z-index: 5; top: 100%; left: 0; width: 150px; display: none; }
+.menu li:hover > ul, .menu li:focus-within > ul { display: block; }
+.menu a:hover, .menu button:hover, .menu a:focus-visible, .menu button:focus-visible { background-color: #5b79a3; }
+.volver { margin: 320px 16px 16px; }
+@media (max-width: 600px) { .menu { font-size: 13px; } .menu a, .menu button { padding: 10px 5px; } .menu ul { width: 130px; } .menu > li:last-child ul { left: auto; right: 0; } }
