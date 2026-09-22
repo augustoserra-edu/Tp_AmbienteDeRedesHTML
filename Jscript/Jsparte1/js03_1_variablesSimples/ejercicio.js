@@ -1,8 +1,8 @@
-var z;
+let z;
 let q;
-var a = 1;
-var b = "1";
-var c = 2;
+let a = 1;
+let b = "1";
+let c = 2;
 
 function mostrar(nombre, valor) {
     document.getElementById("salida").innerHTML = "<h2 id='valor-variable'></h2><h2>Tipo de " + nombre + ": " + typeof valor + "</h2>";
@@ -14,7 +14,7 @@ document.getElementById("z").addEventListener("click", function() {
     mostrar("z", z);
 });
 document.getElementById("q").addEventListener("click", function() {
-    var valor = prompt("Nuevo valor para q:");
+    let valor = prompt("Nuevo valor para q:");
     if (valor != null) {
         q = valor;
         mostrar("q", q);

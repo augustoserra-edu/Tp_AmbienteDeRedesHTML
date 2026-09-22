@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulario adaptable</title>
-<link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario RWD</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="formulario.js" defer></script>
+<script src="../../../navegacion/secciones.js" defer></script>
+<script src="../../../navegacion/menu.js" defer></script>
 </head>
 <body>
 <header><h1>Formulario</h1></header>
 <form id="formulario">
-<div class="campos"><div class="entrada"><label for="apellido">1 Apellido:</label><br><input id="apellido" name="apellido" type="text" autocomplete="family-name" required></div>
-<div class="entrada"><label for="nombres">2 Nombres:</label><br><input id="nombres" name="nombres" type="text" autocomplete="given-name" required></div>
-<div class="entrada"><label for="clave">3 Contraseña:</label><br><input id="clave" name="clave" type="password" autocomplete="new-password"></div>
-<div class="entrada"><label for="deshabilitado">4 Campo deshabilitado:</label><br><input id="deshabilitado" name="deshabilitado" type="text" value="valor deshabilitado" disabled></div>
-<div class="entrada"><label for="fecha">5 Fecha:</label><br><input id="fecha" name="fecha" type="date" ></div>
-<div class="entrada"><label for="dni">6 DNI:</label><br><input id="dni" name="dni" type="text" inputmode="numeric" pattern="[0-9]{7,8}" title="Ingresá 7 u 8 dígitos"></div>
-<div class="entrada"><fieldset><legend>7 Actividades extracurriculares</legend><label for="musica">Música:</label><br><input id="musica" type="checkbox" name="actividades" value="musica"><br><label for="pintura">Pintura artística:</label><br><input id="pintura" type="checkbox" name="actividades" value="pintura"></fieldset></div>
-<div class="entrada"><fieldset><legend>8 Sexo:</legend><label for="masculino">Masculino:</label><br><input id="masculino" type="radio" name="sexo" value="masculino" checked><br><label for="femenino">Femenino:</label><br><input id="femenino" type="radio" name="sexo" value="femenino"></fieldset></div>
-<div class="entrada"><h2>9 Vacío</h2></div>
-<div class="entrada"><label for="estudios">10 Estudios cursados</label><br><select id="estudios" name="estudios"><option>Primarios</option><option>Secundarios</option><option>Terciarios</option><option>Universitarios</option></select></div>
-<div class="entrada"><label for="area">11 Área de desempeño</label><br><select id="area" name="area"><option>Administración</option><option>Sistemas</option><option>Ventas</option><option>Producción</option></select></div>
-<div class="entrada"><label for="turno">12 Turno</label><br><select id="turno" name="turno"><option>Mañana</option><option>Tarde</option><option>Noche</option></select></div>
-<div class="entrada"><fieldset><legend>13 Conduce</legend><input id="conduce-si" type="radio" name="conduce" value="si" checked><label for="conduce-si">Sí</label> <input id="conduce-no" type="radio" name="conduce" value="no"><label for="conduce-no">No</label></fieldset></div></div>
-<div class="acciones"><button type="submit">Enviar</button><button type="reset">Reset</button></div>
-<p id="resultado" role="status" hidden></p>
+    <div class="campos">
+        <div class="entrada"><label for="apellido">1 Apellido:</label><input id="apellido" name="apellido" required></div>
+        <div class="entrada"><label for="nombres">2 Nombres:</label><input id="nombres" name="nombres" required></div>
+        <div class="entrada"><label for="clave">3 Contraseña:</label><input id="clave" type="password" autocomplete="new-password"></div>
+        <div class="entrada"><label for="deshabilitado">4 Campo deshabilitado:</label><input id="deshabilitado" value="valor deshabilitado" disabled></div>
+        <div class="entrada"><label for="fecha">5 Fecha:</label><input id="fecha" name="fecha" type="date"></div>
+        <div class="entrada"><label for="dni">6 DNI:</label><input id="dni" name="dni" inputmode="numeric" pattern="[0-9]{7,8}" maxlength="8"></div>
+        <div class="entrada"><strong>7 Actividades extracurriculares</strong><label for="musica">Música:</label><input id="musica" name="musica" type="checkbox"><label for="pintura">Pintura artística:</label><input id="pintura" name="pintura" type="checkbox"></div>
+        <div class="entrada">8 Sexo:<label for="masculino">Masculino:</label><input id="masculino" name="sexo" value="masculino" type="radio" checked><label for="femenino">Femenino:</label><input id="femenino" name="sexo" value="femenino" type="radio"></div>
+        <div class="entrada"><h2>9 Vacío</h2></div>
+        <div class="entrada"><label for="estudios">10 Estudios cursados:</label><select id="estudios" name="estudios"><option>Primarios</option><option>Secundarios</option><option>Terciarios</option><option>Universitarios</option></select></div>
+        <div class="entrada"><label for="area">11 Área de desempeño:</label><select id="area" name="area"><option>Administración</option><option>Producción</option><option>Sistemas</option><option>Ventas</option></select></div>
+        <div class="entrada"><label for="turno">12 Turno:</label><select id="turno" name="turno"><option>Mañana</option><option>Tarde</option><option>Noche</option></select></div>
+        <div class="entrada">13 Conduce:<div><label class="enLinea" for="conduce-si"><input id="conduce-si" name="conduce" value="si" type="radio" checked>Sí</label> <label class="enLinea" for="conduce-no"><input id="conduce-no" name="conduce" value="no" type="radio">No</label></div></div>
+        <div class="nuevaFila"></div>
+    </div>
+    <div class="barraControl"><button class="boton" type="submit">Enviar</button><button class="boton" type="reset">Reset</button></div>
 </form>
-<footer><h2>Pie de formulario</h2><a href="../index.html">Volver a CSS · Parte 2</a></footer>
-<script src="formulario.js"></script>
+<footer><h2>Pie de formulario</h2><span id="resultado" role="status"></span> <a class="volver" href="../index.html">Volver a CSS · Parte 2</a></footer>
 </body>
 </html>

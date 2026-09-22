@@ -1,6 +1,6 @@
-var objFormulario = document.getElementById("formulario");
-var objDia = document.getElementById("dia");
-var objMes = document.getElementById("mes");
+let objFormulario = document.getElementById("formulario");
+let objDia = document.getElementById("dia");
+let objMes = document.getElementById("mes");
 
 objDia.addEventListener("keyup", function() {
     if (!objDia.checkValidity()) {

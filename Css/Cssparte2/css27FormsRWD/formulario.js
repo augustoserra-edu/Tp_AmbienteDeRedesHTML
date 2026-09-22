@@ -1,13 +1,10 @@
-const formulario = document.querySelector('#formulario');
-const resultado = document.querySelector('#resultado');
-// Demostración local: no hay un servidor ni se guardan los datos ingresados.
-formulario.addEventListener('submit', (event) => {
-    event.preventDefault();
-    resultado.textContent = 'Formulario validado correctamente. Esta demostración no envía ni guarda los datos.';
-    resultado.hidden = false;
-    resultado.scrollIntoView({ block: 'nearest' });
+// Demostración local del formulario: los controles no envían datos a un servidor.
+let formulario = document.getElementById("formulario");
+let resultado = document.getElementById("resultado");
+formulario.addEventListener("submit", function(evento) {
+    evento.preventDefault();
+    resultado.textContent = "Formulario completado correctamente. ";
 });
-formulario.addEventListener('reset', () => {
-    resultado.hidden = true;
-    resultado.textContent = '';
+formulario.addEventListener("reset", function() {
+    resultado.textContent = "";
 });

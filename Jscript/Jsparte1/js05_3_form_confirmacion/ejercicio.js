@@ -1,4 +1,4 @@
-var formulario = document.getElementById("formulario");
+let formulario = document.getElementById("formulario");
 
 formulario.addEventListener("submit", function(evento) {
     if (!confirm("¿Confirmás el envío del formulario?")) {

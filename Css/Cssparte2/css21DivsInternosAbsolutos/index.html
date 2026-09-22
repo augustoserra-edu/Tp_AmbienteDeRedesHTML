@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Divs internos absolutos</title>
-<link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs internos absolutos</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+<script src="../../../navegacion/secciones.js" defer></script>
+<script src="../../../navegacion/menu.js" defer></script>
 </head>
 <body>
-<main class="contenedor">
-<h1>Estructura de posicionamiento absoluto pero adaptable al medio de presentación.</h1>
-<div class="interno uno"><h2>Contenedor interno 1.</h2><p>Texto dentro del primer contenedor. Su posición y su ancho se expresan en porcentajes del contenedor padre.</p></div>
-<div class="interno dos"><h2>Contenedor interno 2</h2> <img src="../../Cssparte1/imagenes/castillo.jpg" alt="Castillo entre montañas"> <img src="../../Cssparte1/imagenes/castillo.jpg" alt="Castillo entre montañas"> <img src="../../Cssparte1/imagenes/castillo.jpg" alt="Castillo entre montañas"> <img src="../../Cssparte1/imagenes/castillo.jpg" alt="Castillo entre montañas"></div>
-<div class="interno tres"><h2>Contenedor interno 3.</h2><p>Este contenedor tiene transparencia y se superpone a los otros elementos.</p></div>
-</main>
-<footer class="volver"><a href="../index.html">Volver a CSS · Parte 2</a></footer>
+<div class="contenedor">
+    <h1>Estructura de posicionamiento absoluto pero adaptable al medio de presentación.</h1>
+    <div id="contenedorInterno1"><h2>Contenedor interno 1.</h2><p>Texto dentro del primer contenedor. Su posición se mide desde el contenedor padre.</p></div>
+    <div id="contenedorInterno2"><h2>Contenedor interno 2.</h2>
+        <img src="../../Cssparte1/imagenes/castillo.jpg" alt="Castillo 1"><img src="../../Cssparte1/imagenes/castillo.jpg" alt="Castillo 2"><img src="../../Cssparte1/imagenes/castillo.jpg" alt="Castillo 3"><img src="../../Cssparte1/imagenes/castillo.jpg" alt="Castillo 4">
+    </div>
+    <div id="contenedorInterno3"><h2>Contenedor interno 3.</h2><p>Texto dentro del contenedor superpuesto, con transparencia y mayor nivel de capa.</p></div>
+    <a class="volver" href="../index.html">Volver a CSS · Parte 2</a>
+</div>
 </body>
 </html>

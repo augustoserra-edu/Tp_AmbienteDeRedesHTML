@@ -1,0 +1,1 @@
+let textoUnidadesDeMedida = '{"unidadesDeMedida": [{"codUM": "B10", "descripcion": "Bolsa10"}, {"codUM": "B20", "descripcion": "Bolsa20"}, {"codUM": "B30", "descripcion": "Bolsa30"}, {"codUM": "B50", "descripcion": "Bolsa50"}, {"codUM": "C05", "descripcion": "Caja 0.5 lt"}, {"codUM": "C1", "descripcion": "Caja 1 lt"}]}';

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla · Renglones de pedido</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="../unidadesDeMedida.js" defer></script>
+    <script src="renglonesPedido.js" defer></script>
+    <script src="ejercicio.js" defer></script>
+<script src="../../navegacion/secciones.js" defer></script>
+<script src="../../navegacion/menu.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Renglones de pedido</h1>
+        <button id="cargar" type="button">Cargar datos</button>
+        <button id="vaciar" type="button">Vaciar datos</button>
+    </header>
+    <main>
+        <table aria-label="Renglones de pedido">
+            <thead>
+                <tr>
+                    <th scope="col">Número de pedido</th>
+                    <th scope="col">Código de artículo</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Unidad de medida</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio unitario</th>
+                    <th scope="col">Comprobante PDF</th>
+                </tr>
+            </thead>
+            <tbody id="tbDatos"></tbody>
+            <tfoot>
+                <tr>
+                    <td>Número de pedido</td>
+                    <td>Código de artículo</td>
+                    <td>Descripción</td>
+                    <td>Unidad de medida</td>
+                    <td>Cantidad</td>
+                    <td>Precio unitario</td>
+                    <td>Comprobante PDF</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <span id="estado" role="status">Tabla vacía</span>
+        <a href="../index.html">Volver a Especiales</a>
+    </footer>
+</body>
+
+</html>

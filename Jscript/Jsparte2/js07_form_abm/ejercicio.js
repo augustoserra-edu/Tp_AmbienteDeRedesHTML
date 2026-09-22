@@ -1,11 +1,11 @@
-var objFormulario = document.getElementById("formulario");
-var objApellido = document.getElementById("apellido");
-var objNombres = document.getElementById("nombres");
-var objSaldo = document.getElementById("saldo");
-var objBtAlta = document.getElementById("alta");
-var objBtModi = document.getElementById("modi");
-var objBtBaja = document.getElementById("baja");
-var objBtBlanquear = document.getElementById("blanquear");
+let objFormulario = document.getElementById("formulario");
+let objApellido = document.getElementById("apellido");
+let objNombres = document.getElementById("nombres");
+let objSaldo = document.getElementById("saldo");
+let objBtAlta = document.getElementById("alta");
+let objBtModi = document.getElementById("modi");
+let objBtBaja = document.getElementById("baja");
+let objBtBlanquear = document.getElementById("blanquear");
 
 function todoListo() {
     objBtBlanquear.disabled = objApellido.value == "" && objNombres.value == "" && objSaldo.value == "";

@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menú desplegable</title>
-<link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú desplegable</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+<script src="../../../navegacion/secciones.js" defer></script>
+<script src="../../../navegacion/menu.js" defer></script>
 </head>
 <body>
-<nav aria-label="Menú de ejercicios">
-<ul class="menu">
-<li><button type="button">HTML</button><ul>
-<li><a href="../../../ejer02Tablas/index.html">TABLAS</a></li>
-<li><a href="../../../ejer03Formulario/index.html">FORMS</a></li>
-<li><a href="../../../ejer04Iframe/index.html">IFRAMES</a></li>
-</ul></li>
-<li><button type="button">CSS</button><ul>
-<li><a href="../../Cssparte1/css01StyleEnHeader/index.html">STYLE EN EL HEADER</a></li>
-<li><a href="../../Cssparte1/Css02SelectoresDeClase/index.html">SELECTORES DE CLASE</a></li>
-<li><a href="../../Cssparte1/css03StyleEnFile/index.html">STYLE EN FILE</a></li>
-</ul></li>
-<li><a href="../../../Jscript/Jsparte1/index.html">JSCRIPT</a></li>
-<li><button type="button">ESPECIALES</button><ul><li><a href="../css27FormsRWD/index.html">FORMULARIO RWD</a></li><li><a href="../css29TablasRWD/index.html">TABLA RWD</a></li></ul></li>
-<li><a href="../secciones/php.html">PHP</a></li>
-</ul>
+<nav id="menu" aria-label="Menú de ejercicios">
+    <ul>
+        <li><a href="../../../index.html">HTML</a>
+            <ul>
+                <li><a href="../../../ejer02Tablas/index.html">TABLAS</a></li>
+                <li><a href="../../../ejer03Formulario/index.html">FORMS</a></li>
+                <li><a href="../../../ejer04Iframe/index.html">IFRAMES</a></li>
+            </ul>
+        </li>
+        <li><a href="../../index.html">CSS</a>
+            <ul>
+                <li><a href="../../Cssparte1/css01StyleEnHeader/index.html">STYLE EN EL HEADER</a></li>
+                <li><a href="../../Cssparte1/Css02SelectoresDeClase/index.html">SELECTORES DE CLASE</a></li>
+                <li><a href="../../Cssparte1/css03StyleEnFile/index.html">STYLE EN FILE</a></li>
+            </ul>
+        </li>
+        <li><a href="../../../Jscript/Jsparte1/index.html">JSCRIPT</a>
+            <ul><li><a href="../../../Jscript/Jsparte1/index.html">PARTE 1</a></li><li><a href="../../../Jscript/Jsparte2/index.html">PARTE 2</a></li></ul>
+        </li>
+        <li><a href="../index.html">ESPECIALES</a>
+            <ul><li><a href="../css27FormsRWD/index.html">FORMULARIO RWD</a></li><li><a href="../css29TablasRWD/index.html">TABLA RWD</a></li><li><a href="../css30LayoutBasico/index.html">LAYOUT</a></li></ul>
+        </li>
+        <li><a href="../secciones/php.html">PHP</a></li>
+    </ul>
 </nav>
-<footer class="volver"><a href="../index.html">Volver a CSS · Parte 2</a></footer>
+<div class="nuevaFila"></div>
+<a class="volver" href="../index.html">Volver a CSS · Parte 2</a>
 </body>
 </html>

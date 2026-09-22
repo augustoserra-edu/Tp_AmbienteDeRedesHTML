@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tabla adaptable</title>
-<link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla RWD</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+<script src="../../../navegacion/secciones.js" defer></script>
+<script src="../../../navegacion/menu.js" defer></script>
 </head>
 <body>
 <header><h1>RWD (Responsive Web Design) TABLE:</h1></header>
-<main class="tabla-contenedor" tabindex="0" aria-label="Tabla de contactos de ejemplo con desplazamiento">
-<table><thead><tr><th scope="col">Id</th><th scope="col">Nick</th><th scope="col">Mail</th><th scope="col">Web</th><th scope="col">Twitter</th><th scope="col">Skype</th></tr></thead>
-<tbody><tr><td data-campo="Id">1</td><td data-campo="Nick">Fu</td><td data-campo="Mail">fulano@example.com</td><td data-campo="Web">https://fulano.example.com</td><td data-campo="Twitter">@fulano</td><td data-campo="Skype">fulano@example.com</td></tr>
-<tr><td data-campo="Id">2</td><td data-campo="Nick">Menga</td><td data-campo="Mail">mengano@example.com</td><td data-campo="Web">https://mengano.example.com</td><td data-campo="Twitter">@mengano</td><td data-campo="Skype">mengano@example.com</td></tr>
-<tr><td data-campo="Id">3</td><td data-campo="Nick">Zulti</td><td data-campo="Mail">zutano@example.com</td><td data-campo="Web">https://zutano.example.com</td><td data-campo="Twitter">@zutano</td><td data-campo="Skype">zutano@example.com</td></tr>
-<tr><td data-campo="Id">4</td><td data-campo="Nick">Lu</td><td data-campo="Mail">luis@example.com</td><td data-campo="Web">https://luis.example.com</td><td data-campo="Twitter">@luis</td><td data-campo="Skype">luis@example.com</td></tr>
-<tr><td data-campo="Id">5</td><td data-campo="Nick">Pepe</td><td data-campo="Mail">jose@example.com</td><td data-campo="Web">https://jose.example.com</td><td data-campo="Twitter">@jose</td><td data-campo="Skype">jose@example.com</td></tr>
-<tr><td data-campo="Id">6</td><td data-campo="Nick">Gato</td><td data-campo="Mail">eduardo@example.com</td><td data-campo="Web">https://eduardo.example.com</td><td data-campo="Twitter">@eduardo</td><td data-campo="Skype">eduardo@example.com</td></tr>
-<tr><td data-campo="Id">7</td><td data-campo="Nick">Dulce</td><td data-campo="Mail">lilia@example.com</td><td data-campo="Web">https://lilia.example.com</td><td data-campo="Twitter">@lilia</td><td data-campo="Skype">lilia@example.com</td></tr>
-<tr><td data-campo="Id">8</td><td data-campo="Nick">Fu</td><td data-campo="Mail">fulano@example.com</td><td data-campo="Web">https://fulano.example.com</td><td data-campo="Twitter">@fulano</td><td data-campo="Skype">fulano@example.com</td></tr>
-<tr><td data-campo="Id">9</td><td data-campo="Nick">Menga</td><td data-campo="Mail">mengano@example.com</td><td data-campo="Web">https://mengano.example.com</td><td data-campo="Twitter">@mengano</td><td data-campo="Skype">mengano@example.com</td></tr>
-<tr><td data-campo="Id">10</td><td data-campo="Nick">Zulti</td><td data-campo="Mail">zutano@example.com</td><td data-campo="Web">https://zutano.example.com</td><td data-campo="Twitter">@zutano</td><td data-campo="Skype">zutano@example.com</td></tr>
-<tr><td data-campo="Id">11</td><td data-campo="Nick">Lu</td><td data-campo="Mail">luis@example.com</td><td data-campo="Web">https://luis.example.com</td><td data-campo="Twitter">@luis</td><td data-campo="Skype">luis@example.com</td></tr>
-<tr><td data-campo="Id">12</td><td data-campo="Nick">Pepe</td><td data-campo="Mail">jose@example.com</td><td data-campo="Web">https://jose.example.com</td><td data-campo="Twitter">@jose</td><td data-campo="Skype">jose@example.com</td></tr>
-<tr><td data-campo="Id">13</td><td data-campo="Nick">Gato</td><td data-campo="Mail">eduardo@example.com</td><td data-campo="Web">https://eduardo.example.com</td><td data-campo="Twitter">@eduardo</td><td data-campo="Skype">eduardo@example.com</td></tr>
-<tr><td data-campo="Id">14</td><td data-campo="Nick">Dulce</td><td data-campo="Mail">lilia@example.com</td><td data-campo="Web">https://lilia.example.com</td><td data-campo="Twitter">@lilia</td><td data-campo="Skype">lilia@example.com</td></tr>
-<tr><td data-campo="Id">15</td><td data-campo="Nick">Fu</td><td data-campo="Mail">fulano@example.com</td><td data-campo="Web">https://fulano.example.com</td><td data-campo="Twitter">@fulano</td><td data-campo="Skype">fulano@example.com</td></tr>
-<tr><td data-campo="Id">16</td><td data-campo="Nick">Menga</td><td data-campo="Mail">mengano@example.com</td><td data-campo="Web">https://mengano.example.com</td><td data-campo="Twitter">@mengano</td><td data-campo="Skype">mengano@example.com</td></tr>
-<tr><td data-campo="Id">17</td><td data-campo="Nick">Zulti</td><td data-campo="Mail">zutano@example.com</td><td data-campo="Web">https://zutano.example.com</td><td data-campo="Twitter">@zutano</td><td data-campo="Skype">zutano@example.com</td></tr>
-<tr><td data-campo="Id">18</td><td data-campo="Nick">Lu</td><td data-campo="Mail">luis@example.com</td><td data-campo="Web">https://luis.example.com</td><td data-campo="Twitter">@luis</td><td data-campo="Skype">luis@example.com</td></tr>
-<tr><td data-campo="Id">19</td><td data-campo="Nick">Pepe</td><td data-campo="Mail">jose@example.com</td><td data-campo="Web">https://jose.example.com</td><td data-campo="Twitter">@jose</td><td data-campo="Skype">jose@example.com</td></tr>
-<tr><td data-campo="Id">20</td><td data-campo="Nick">Gato</td><td data-campo="Mail">eduardo@example.com</td><td data-campo="Web">https://eduardo.example.com</td><td data-campo="Twitter">@eduardo</td><td data-campo="Skype">eduardo@example.com</td></tr>
-<tr><td data-campo="Id">21</td><td data-campo="Nick">Dulce</td><td data-campo="Mail">lilia@example.com</td><td data-campo="Web">https://lilia.example.com</td><td data-campo="Twitter">@lilia</td><td data-campo="Skype">lilia@example.com</td></tr>
-<tr><td data-campo="Id">22</td><td data-campo="Nick">Fu</td><td data-campo="Mail">fulano@example.com</td><td data-campo="Web">https://fulano.example.com</td><td data-campo="Twitter">@fulano</td><td data-campo="Skype">fulano@example.com</td></tr>
-<tr><td data-campo="Id">23</td><td data-campo="Nick">Menga</td><td data-campo="Mail">mengano@example.com</td><td data-campo="Web">https://mengano.example.com</td><td data-campo="Twitter">@mengano</td><td data-campo="Skype">mengano@example.com</td></tr>
-<tr><td data-campo="Id">24</td><td data-campo="Nick">Zulti</td><td data-campo="Mail">zutano@example.com</td><td data-campo="Web">https://zutano.example.com</td><td data-campo="Twitter">@zutano</td><td data-campo="Skype">zutano@example.com</td></tr>
-<tr><td data-campo="Id">25</td><td data-campo="Nick">Lu</td><td data-campo="Mail">luis@example.com</td><td data-campo="Web">https://luis.example.com</td><td data-campo="Twitter">@luis</td><td data-campo="Skype">luis@example.com</td></tr>
-<tr><td data-campo="Id">26</td><td data-campo="Nick">Pepe</td><td data-campo="Mail">jose@example.com</td><td data-campo="Web">https://jose.example.com</td><td data-campo="Twitter">@jose</td><td data-campo="Skype">jose@example.com</td></tr>
-<tr><td data-campo="Id">27</td><td data-campo="Nick">Gato</td><td data-campo="Mail">eduardo@example.com</td><td data-campo="Web">https://eduardo.example.com</td><td data-campo="Twitter">@eduardo</td><td data-campo="Skype">eduardo@example.com</td></tr>
-<tr><td data-campo="Id">28</td><td data-campo="Nick">Dulce</td><td data-campo="Mail">lilia@example.com</td><td data-campo="Web">https://lilia.example.com</td><td data-campo="Twitter">@lilia</td><td data-campo="Skype">lilia@example.com</td></tr>
-<tr><td data-campo="Id">29</td><td data-campo="Nick">Fu</td><td data-campo="Mail">fulano@example.com</td><td data-campo="Web">https://fulano.example.com</td><td data-campo="Twitter">@fulano</td><td data-campo="Skype">fulano@example.com</td></tr>
-<tr><td data-campo="Id">30</td><td data-campo="Nick">Menga</td><td data-campo="Mail">mengano@example.com</td><td data-campo="Web">https://mengano.example.com</td><td data-campo="Twitter">@mengano</td><td data-campo="Skype">mengano@example.com</td></tr>
-<tr><td data-campo="Id">31</td><td data-campo="Nick">Zulti</td><td data-campo="Mail">zutano@example.com</td><td data-campo="Web">https://zutano.example.com</td><td data-campo="Twitter">@zutano</td><td data-campo="Skype">zutano@example.com</td></tr>
-<tr><td data-campo="Id">32</td><td data-campo="Nick">Lu</td><td data-campo="Mail">luis@example.com</td><td data-campo="Web">https://luis.example.com</td><td data-campo="Twitter">@luis</td><td data-campo="Skype">luis@example.com</td></tr>
-<tr><td data-campo="Id">33</td><td data-campo="Nick">Pepe</td><td data-campo="Mail">jose@example.com</td><td data-campo="Web">https://jose.example.com</td><td data-campo="Twitter">@jose</td><td data-campo="Skype">jose@example.com</td></tr>
-<tr><td data-campo="Id">34</td><td data-campo="Nick">Gato</td><td data-campo="Mail">eduardo@example.com</td><td data-campo="Web">https://eduardo.example.com</td><td data-campo="Twitter">@eduardo</td><td data-campo="Skype">eduardo@example.com</td></tr>
-<tr><td data-campo="Id">35</td><td data-campo="Nick">Dulce</td><td data-campo="Mail">lilia@example.com</td><td data-campo="Web">https://lilia.example.com</td><td data-campo="Twitter">@lilia</td><td data-campo="Skype">lilia@example.com</td></tr></tbody></table>
+<main class="tabla" tabindex="0" aria-label="Tabla de contactos">
+    <table>
+        <thead><tr><th scope="col" campo-dato="Id">Id</th><th scope="col" campo-dato="Nick">Nick</th><th scope="col" campo-dato="Mail">Mail</th><th scope="col" campo-dato="Web">Web</th><th scope="col" campo-dato="Twitter">Twitter</th><th scope="col" campo-dato="Skype">Skype</th></tr></thead>
+        <tbody>
+            <tr><td campo-dato="Id">1</td><td campo-dato="Nick">Fu</td><td campo-dato="Mail">fulano@gmail.com</td><td campo-dato="Web">http://fulano.ar</td><td campo-dato="Twitter">@fulano</td><td campo-dato="Skype">fulano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">2</td><td campo-dato="Nick">Menga</td><td campo-dato="Mail">mengano@mail.com</td><td campo-dato="Web">http://mengano.com</td><td campo-dato="Twitter">@Mengano</td><td campo-dato="Skype">mengano@mail.com</td></tr>
+            <tr><td campo-dato="Id">3</td><td campo-dato="Nick">Zulti</td><td campo-dato="Mail">zultano@gmail.com</td><td campo-dato="Web">http://zultano.org</td><td campo-dato="Twitter">@zultano</td><td campo-dato="Skype">zultano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">4</td><td campo-dato="Nick">lu</td><td campo-dato="Mail">luis@mail.ar</td><td campo-dato="Web">http://luis.music</td><td campo-dato="Twitter">@luis</td><td campo-dato="Skype">luis@mail.ar</td></tr>
+            <tr><td campo-dato="Id">5</td><td campo-dato="Nick">Pepe</td><td campo-dato="Mail">jose@gmail.com</td><td campo-dato="Web">http://jose.com.ar</td><td campo-dato="Twitter">@jose</td><td campo-dato="Skype">jose@gmail.com</td></tr>
+            <tr><td campo-dato="Id">6</td><td campo-dato="Nick">Gato</td><td campo-dato="Mail">eduardo@mail.com</td><td campo-dato="Web">http://gato.com</td><td campo-dato="Twitter">@gato</td><td campo-dato="Skype">eduardo@mail.com</td></tr>
+            <tr><td campo-dato="Id">7</td><td campo-dato="Nick">Dulce</td><td campo-dato="Mail">lilia@mail.com</td><td campo-dato="Web">http://lili</td><td campo-dato="Twitter">@lili</td><td campo-dato="Skype">lilia@mail.com</td></tr>
+            <tr><td campo-dato="Id">8</td><td campo-dato="Nick">Fu</td><td campo-dato="Mail">fulano@gmail.com</td><td campo-dato="Web">http://fulano.ar</td><td campo-dato="Twitter">@fulano</td><td campo-dato="Skype">fulano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">9</td><td campo-dato="Nick">Menga</td><td campo-dato="Mail">mengano@mail.com</td><td campo-dato="Web">http://mengano.com</td><td campo-dato="Twitter">@Mengano</td><td campo-dato="Skype">mengano@mail.com</td></tr>
+            <tr><td campo-dato="Id">10</td><td campo-dato="Nick">Zulti</td><td campo-dato="Mail">zultano@gmail.com</td><td campo-dato="Web">http://zultano.org</td><td campo-dato="Twitter">@zultano</td><td campo-dato="Skype">zultano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">11</td><td campo-dato="Nick">lu</td><td campo-dato="Mail">luis@mail.ar</td><td campo-dato="Web">http://luis.music</td><td campo-dato="Twitter">@luis</td><td campo-dato="Skype">luis@mail.ar</td></tr>
+            <tr><td campo-dato="Id">12</td><td campo-dato="Nick">Pepe</td><td campo-dato="Mail">jose@gmail.com</td><td campo-dato="Web">http://jose.com.ar</td><td campo-dato="Twitter">@jose</td><td campo-dato="Skype">jose@gmail.com</td></tr>
+            <tr><td campo-dato="Id">13</td><td campo-dato="Nick">Gato</td><td campo-dato="Mail">eduardo@mail.com</td><td campo-dato="Web">http://gato.com</td><td campo-dato="Twitter">@gato</td><td campo-dato="Skype">eduardo@mail.com</td></tr>
+            <tr><td campo-dato="Id">14</td><td campo-dato="Nick">Dulce</td><td campo-dato="Mail">lilia@mail.com</td><td campo-dato="Web">http://lili</td><td campo-dato="Twitter">@lili</td><td campo-dato="Skype">lilia@mail.com</td></tr>
+            <tr><td campo-dato="Id">15</td><td campo-dato="Nick">Fu</td><td campo-dato="Mail">fulano@gmail.com</td><td campo-dato="Web">http://fulano.ar</td><td campo-dato="Twitter">@fulano</td><td campo-dato="Skype">fulano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">16</td><td campo-dato="Nick">Menga</td><td campo-dato="Mail">mengano@mail.com</td><td campo-dato="Web">http://mengano.com</td><td campo-dato="Twitter">@Mengano</td><td campo-dato="Skype">mengano@mail.com</td></tr>
+            <tr><td campo-dato="Id">17</td><td campo-dato="Nick">Zulti</td><td campo-dato="Mail">zultano@gmail.com</td><td campo-dato="Web">http://zultano.org</td><td campo-dato="Twitter">@zultano</td><td campo-dato="Skype">zultano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">18</td><td campo-dato="Nick">lu</td><td campo-dato="Mail">luis@mail.ar</td><td campo-dato="Web">http://luis.music</td><td campo-dato="Twitter">@luis</td><td campo-dato="Skype">luis@mail.ar</td></tr>
+            <tr><td campo-dato="Id">19</td><td campo-dato="Nick">Pepe</td><td campo-dato="Mail">jose@gmail.com</td><td campo-dato="Web">http://jose.com.ar</td><td campo-dato="Twitter">@jose</td><td campo-dato="Skype">jose@gmail.com</td></tr>
+            <tr><td campo-dato="Id">20</td><td campo-dato="Nick">Gato</td><td campo-dato="Mail">eduardo@mail.com</td><td campo-dato="Web">http://gato.com</td><td campo-dato="Twitter">@gato</td><td campo-dato="Skype">eduardo@mail.com</td></tr>
+            <tr><td campo-dato="Id">21</td><td campo-dato="Nick">Dulce</td><td campo-dato="Mail">lilia@mail.com</td><td campo-dato="Web">http://lili</td><td campo-dato="Twitter">@lili</td><td campo-dato="Skype">lilia@mail.com</td></tr>
+            <tr><td campo-dato="Id">22</td><td campo-dato="Nick">Fu</td><td campo-dato="Mail">fulano@gmail.com</td><td campo-dato="Web">http://fulano.ar</td><td campo-dato="Twitter">@fulano</td><td campo-dato="Skype">fulano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">23</td><td campo-dato="Nick">Menga</td><td campo-dato="Mail">mengano@mail.com</td><td campo-dato="Web">http://mengano.com</td><td campo-dato="Twitter">@Mengano</td><td campo-dato="Skype">mengano@mail.com</td></tr>
+            <tr><td campo-dato="Id">24</td><td campo-dato="Nick">Zulti</td><td campo-dato="Mail">zultano@gmail.com</td><td campo-dato="Web">http://zultano.org</td><td campo-dato="Twitter">@zultano</td><td campo-dato="Skype">zultano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">25</td><td campo-dato="Nick">lu</td><td campo-dato="Mail">luis@mail.ar</td><td campo-dato="Web">http://luis.music</td><td campo-dato="Twitter">@luis</td><td campo-dato="Skype">luis@mail.ar</td></tr>
+            <tr><td campo-dato="Id">26</td><td campo-dato="Nick">Pepe</td><td campo-dato="Mail">jose@gmail.com</td><td campo-dato="Web">http://jose.com.ar</td><td campo-dato="Twitter">@jose</td><td campo-dato="Skype">jose@gmail.com</td></tr>
+            <tr><td campo-dato="Id">27</td><td campo-dato="Nick">Gato</td><td campo-dato="Mail">eduardo@mail.com</td><td campo-dato="Web">http://gato.com</td><td campo-dato="Twitter">@gato</td><td campo-dato="Skype">eduardo@mail.com</td></tr>
+            <tr><td campo-dato="Id">28</td><td campo-dato="Nick">Dulce</td><td campo-dato="Mail">lilia@mail.com</td><td campo-dato="Web">http://lili</td><td campo-dato="Twitter">@lili</td><td campo-dato="Skype">lilia@mail.com</td></tr>
+            <tr><td campo-dato="Id">29</td><td campo-dato="Nick">Fu</td><td campo-dato="Mail">fulano@gmail.com</td><td campo-dato="Web">http://fulano.ar</td><td campo-dato="Twitter">@fulano</td><td campo-dato="Skype">fulano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">30</td><td campo-dato="Nick">Menga</td><td campo-dato="Mail">mengano@mail.com</td><td campo-dato="Web">http://mengano.com</td><td campo-dato="Twitter">@Mengano</td><td campo-dato="Skype">mengano@mail.com</td></tr>
+            <tr><td campo-dato="Id">31</td><td campo-dato="Nick">Zulti</td><td campo-dato="Mail">zultano@gmail.com</td><td campo-dato="Web">http://zultano.org</td><td campo-dato="Twitter">@zultano</td><td campo-dato="Skype">zultano@gmail.com</td></tr>
+            <tr><td campo-dato="Id">32</td><td campo-dato="Nick">lu</td><td campo-dato="Mail">luis@mail.ar</td><td campo-dato="Web">http://luis.music</td><td campo-dato="Twitter">@luis</td><td campo-dato="Skype">luis@mail.ar</td></tr>
+            <tr><td campo-dato="Id">33</td><td campo-dato="Nick">Pepe</td><td campo-dato="Mail">jose@gmail.com</td><td campo-dato="Web">http://jose.com.ar</td><td campo-dato="Twitter">@jose</td><td campo-dato="Skype">jose@gmail.com</td></tr>
+            <tr><td campo-dato="Id">34</td><td campo-dato="Nick">Gato</td><td campo-dato="Mail">eduardo@mail.com</td><td campo-dato="Web">http://gato.com</td><td campo-dato="Twitter">@gato</td><td campo-dato="Skype">eduardo@mail.com</td></tr>
+            <tr><td campo-dato="Id">35</td><td campo-dato="Nick">Dulce</td><td campo-dato="Mail">lilia@mail.com</td><td campo-dato="Web">http://lili</td><td campo-dato="Twitter">@lili</td><td campo-dato="Skype">lilia@mail.com</td></tr>
+        </tbody>
+    </table>
 </main>
-<footer>Pie · <a href="../index.html">Volver a CSS · Parte 2</a></footer>
+<footer>Pie<br><a class="volver" href="../index.html">Volver a CSS · Parte 2</a></footer>
 </body>
 </html>

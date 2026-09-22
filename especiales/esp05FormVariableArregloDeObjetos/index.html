@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="../unidadesDeMedida.js" defer></script>
+    <script src="ejercicio.js" defer></script>
+<script src="../../navegacion/secciones.js" defer></script>
+<script src="../../navegacion/menu.js" defer></script>
+</head>
+<body>
+    <header><h1>Formulario<br>Renglones de pedido</h1></header>
+    <main>
+        <form id="formulario">
+            <div class="campo">
+                <label for="NroDePedido">Número de pedido:</label>
+                <input id="NroDePedido" name="NroDePedido" type="text" required>
+            </div>
+            <div class="campo">
+                <label for="Cod_articulo">Código de artículo:</label>
+                <input id="Cod_articulo" name="Cod_articulo" type="text" required>
+            </div>
+            <div class="campo">
+                <label for="Descripcion">Descripción:</label>
+                <input id="Descripcion" name="Descripcion" type="text" required>
+            </div>
+            <div class="campo">
+                <label for="codUM">Unidad de medida:</label>
+                <select id="codUM" name="codUM" required></select>
+            </div>
+            <div class="campo">
+                <label for="Cantidad">Cantidad:</label>
+                <input id="Cantidad" name="Cantidad" type="number" min="0.01" step="0.01" required>
+            </div>
+            <div class="campo">
+                <label for="PrecioUnitario">Precio unitario:</label>
+                <input id="PrecioUnitario" name="PrecioUnitario" type="number" min="0" step="0.01" required>
+            </div>
+            <div class="campo">
+                <label for="Pdf_comprobante">Comprobante PDF:</label>
+                <input id="Pdf_comprobante" name="Pdf_comprobante" type="file" accept=".pdf,application/pdf" required>
+            </div>
+            <div class="campo accion"><button type="submit">ENVIAR</button></div>
+            <p id="resultado" role="status"></p>
+        </form>
+    </main>
+    <footer>
+        <h2>Pie de página</h2>
+        <a href="../index.html">Volver a Especiales</a>
+    </footer>
+</body>
+</html>

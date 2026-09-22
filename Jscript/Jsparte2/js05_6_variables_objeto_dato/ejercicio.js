@@ -1,13 +1,13 @@
-var objetoPersona = { nombre: "Pablo", apellido: "Galdi", fechaNac: "01/07/1956" };
-var arregloPersonas = [objetoPersona];
+let objetoPersona = { nombre: "Pablo", apellido: "Galdi", fechaNac: "01/07/1956" };
+let arregloPersonas = [objetoPersona];
 arregloPersonas.push({ nombre: "Jose", apellido: "Witt", fechaNac: "17/01/1985" });
-var objetoPersonas = { personas: arregloPersonas };
+let objetoPersonas = { personas: arregloPersonas };
 
-var objNombre = document.getElementById("nombre");
-var objApellido = document.getElementById("apellido");
-var objNacimiento = document.getElementById("nacimiento");
-var objPresentacion = document.getElementById("presentacion");
-var objMensaje = document.getElementById("mensaje");
+let objNombre = document.getElementById("nombre");
+let objApellido = document.getElementById("apellido");
+let objNacimiento = document.getElementById("nacimiento");
+let objPresentacion = document.getElementById("presentacion");
+let objMensaje = document.getElementById("mensaje");
 
 function crearPersona() {
     if (objNombre.checkValidity() && objApellido.checkValidity() && objNacimiento.checkValidity()) {
@@ -28,13 +28,13 @@ function crearPersona() {
 
 // Escapamos los datos ingresados antes de incorporarlos al texto HTML.
 function textoSeguro(texto) {
-    var auxiliar = document.createElement("div");
+    let auxiliar = document.createElement("div");
     auxiliar.appendChild(document.createTextNode(texto));
     return auxiliar.innerHTML;
 }
 
 function listarPersonas() {
-    var texto = "<h1>Presentación</h1>";
+    let texto = "<h1>Presentación</h1>";
     texto = texto + "<table><thead><tr><th>Nombre</th><th>Apellido</th><th>Fecha de nacimiento</th></tr></thead><tbody>";
     objetoPersonas.personas.forEach(function(item, indice) {
         texto = texto + "<tr><td>" + textoSeguro(item.nombre) + "</td>";

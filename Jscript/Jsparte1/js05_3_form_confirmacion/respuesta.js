@@ -1,7 +1,7 @@
 // Complemento de la página de respuesta: leemos los datos enviados por GET.
-var parametros = new URLSearchParams(window.location.search);
-var nombre = parametros.get("nombre");
-var apellido = parametros.get("apellido");
+let parametros = new URLSearchParams(window.location.search);
+let nombre = parametros.get("nombre");
+let apellido = parametros.get("apellido");
 if (nombre == null) {
     nombre = "";
 }

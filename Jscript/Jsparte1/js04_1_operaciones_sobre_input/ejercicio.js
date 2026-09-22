@@ -1,4 +1,4 @@
-var campo = document.getElementById("valor");
+let campo = document.getElementById("valor");
 
 document.getElementById("mostrar").addEventListener("click", function() {
     alert(campo.value);
@@ -10,7 +10,7 @@ document.getElementById("sumar").addEventListener("click", function() {
 });
 document.getElementById("cuadrado").addEventListener("click", function() {
     if (validarNumero(campo)) {
-        var x = leerNumero(campo);
+        let x = leerNumero(campo);
         campo.value = verificarResultado(x * x);
     }
 });

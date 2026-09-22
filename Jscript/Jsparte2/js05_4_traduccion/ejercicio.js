@@ -1,5 +1,5 @@
 
-var idioma = window.navigator.languages[0].substr(0, 2);
+let idioma = window.navigator.languages[0].substr(0, 2);
 
 if (idioma == "en") {
     document.documentElement.lang = "en";

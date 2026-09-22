@@ -1,7 +1,7 @@
-var entrada1 = document.getElementById("entrada1");
-var entrada2 = document.getElementById("entrada2");
-var entrada3 = document.getElementById("entrada3");
-var resultado = document.getElementById("resultado");
+let entrada1 = document.getElementById("entrada1");
+let entrada2 = document.getElementById("entrada2");
+let entrada3 = document.getElementById("entrada3");
+let resultado = document.getElementById("resultado");
 
 function entradasValidas() {
     resultado.value = "";

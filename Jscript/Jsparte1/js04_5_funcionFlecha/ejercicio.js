@@ -3,9 +3,9 @@ const suma = (a, b) => {
 };
 
 document.getElementById("sumar").addEventListener("click", function() {
-    var entradaA = document.getElementById("a");
-    var entradaB = document.getElementById("b");
-    var resultado = document.getElementById("resultado");
+    let entradaA = document.getElementById("a");
+    let entradaB = document.getElementById("b");
+    let resultado = document.getElementById("resultado");
     resultado.value = "";
     if (validarNumero(entradaA) && validarNumero(entradaB)) {
         resultado.value = verificarResultado(suma(leerNumero(entradaA), leerNumero(entradaB)));

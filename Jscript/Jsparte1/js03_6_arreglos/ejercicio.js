@@ -1,6 +1,6 @@
-var arregloFrutas = [];
+let arregloFrutas = [];
 arregloFrutas = ["banana", "manzana"];
-var fruta = prompt("Ingresá una tercera fruta:");
+let fruta = prompt("Ingresá una tercera fruta:");
 if (fruta != null && fruta != "") {
     arregloFrutas.push(fruta);
 }

@@ -1,5 +1,5 @@
-var acumulador = 0;
-var display = document.getElementById("display");
+let acumulador = 0;
+let display = document.getElementById("display");
 
 // Los botones llaman a la misma función con distintos argumentos.
 function agregarDigito(digito) {
@@ -39,7 +39,7 @@ document.getElementById("digito9").addEventListener("click", function() {
 
 document.getElementById("acumular").addEventListener("click", function() {
     if (validarNumero(display)) {
-        var resultado = verificarResultado(acumulador + leerNumero(display));
+        let resultado = verificarResultado(acumulador + leerNumero(display));
         if (resultado !== "") {
             acumulador = resultado;
         }

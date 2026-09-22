@@ -1,8 +1,8 @@
-var objContenedor = document.getElementById("contenedor");
+let objContenedor = document.getElementById("contenedor");
 
 function crearElemento() {
-    var objDiv = document.createElement("div");
-    var textoHtml = "<h1>Elemento creado: ";
+    let objDiv = document.createElement("div");
+    let textoHtml = "<h1>Elemento creado: ";
     textoHtml = textoHtml + objContenedor.childNodes.length;
     textoHtml = textoHtml + "</h1>";
     objDiv.innerHTML = textoHtml;

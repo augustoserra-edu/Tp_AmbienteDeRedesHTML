@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tamaños de fuente</title>
-<link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamaño de letra y consultas de medios</title>
+    <link rel="stylesheet" href="estilo.css">
+<script src="../../../navegacion/secciones.js" defer></script>
+<script src="../../../navegacion/menu.js" defer></script>
 </head>
 <body>
-<h1>Tamaño de las fuentes dependiente de la resolución del medio de visualización</h1>
-<p>Los textos marcados con H1 tendrán dimensión doble a los párrafos comunes. Corresponden a títulos.</p>
-<p>En el ejercicio se define un tamaño de letra por defecto para el body y luego los tamaños se expresan en unidades em.</p>
-<p>En este ejercicio se trabaja con @media para modificar el tamaño de letra según el ancho del viewport.</p>
+<h1>Tamaño de los fonts dependiente de la resolución del medio de visualización</h1>
+<p>Los textos marcados con "h1" tendrán dimensión doble a los párrafos comunes. Corresponderían a títulos.</p>
+<p>En el ejercicio se definirá un tamaño de letra por defecto para el body y luego todo será expresado en unidades em (unidad de referencia).</p>
+<p>En este ejercicio se trabajará con consultas de medios (@media) para que el tamaño de letra se modifique según el tamaño del viewport.</p>
 <p>La resolución de una pantalla se mide en píxeles de ancho por píxeles de alto.</p>
-<p>El tamaño físico de la pantalla y su densidad de píxeles son conceptos diferentes.</p>
-<p>Los píxeles CSS permiten definir medidas de presentación para distintos dispositivos.</p>
-<p>Una unidad em es relativa al tamaño de fuente del elemento o de su contenedor, según la propiedad.</p>
-<p>Cambiá el ancho de la ventana para observar los tres tamaños de letra y colores de fondo.</p>
-
-<footer><a href="../index.html">Volver a CSS · Parte 1</a></footer>
+<p>Los dispositivos chicos pueden tener mayor densidad de píxeles que las pantallas grandes.</p>
+<p>Los píxeles CSS permiten describir el tamaño de los elementos dentro del navegador.</p>
+<p>El tamaño de una pantalla y su resolución no son la misma medida.</p>
+<p>Las consultas de medios permiten adaptar los estilos al ancho disponible.</p>
+<p>Al modificar el tamaño de la ventana, cambian el tamaño de la letra y el color del fondo.</p>
+<footer class="volver"><a href="../index.html">Volver a CSS · Parte 1</a></footer>
 </body>
 </html>

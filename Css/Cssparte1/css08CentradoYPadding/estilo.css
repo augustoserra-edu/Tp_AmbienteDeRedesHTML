@@ -1,8 +1,24 @@
 body { font-size: 32px; }
 h1 { font-size: 2em; }
-.caja { width: 50%; margin: auto; }
-.sin-padding { background-color: lightblue; }
-.con-padding { background-color: lightgreen; padding-left: 10%; padding-right: 10%; }
-.con-border-box { background-color: beige; padding-left: 10%; padding-right: 10%; box-sizing: border-box; }
-footer { font-size: 16px; margin-top: 20px; }
+.centrado { width: 50%; margin: auto; }
+.sinPadding { background-color: lightblue; }
+.conPadding {
+    background-color: lightgreen;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* content-box suma el padding al ancho declarado. */
+    box-sizing: content-box;
+}
+.conBorderBox {
+    background-color: beige;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
 @media (max-width: 600px) { body { font-size: 16px; } }
+
+.volver {
+    clear: both;
+    margin: 24px 8px;
+    font-size: 16px;
+}

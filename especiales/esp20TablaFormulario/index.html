@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla y formulario · Renglones de pedido</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="../unidadesDeMedida.js" defer></script>
+    <script src="../esp10TablaVariableArregloDeObjetos/renglonesPedido.js" defer></script>
+    <script src="ejercicio.js" defer></script>
+<script src="../../navegacion/secciones.js" defer></script>
+<script src="../../navegacion/menu.js" defer></script>
+</head>
+
+<body>
+    <div id="contenedor" class="contenedorActivo">
+    <header>
+        <h1>Renglones de pedido</h1>
+        <button id="cargar" type="button">Cargar datos</button>
+        <button id="vaciar" type="button">Vaciar datos</button>
+        <button id="abrir" type="button">Cargar formulario</button>
+    </header>
+    <main>
+        <table aria-label="Renglones de pedido">
+            <thead>
+                <tr>
+                    <th scope="col">Número de pedido</th>
+                    <th scope="col">Código de artículo</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Unidad de medida</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio unitario</th>
+                    <th scope="col">Comprobante PDF</th>
+                </tr>
+            </thead>
+            <tbody id="tbDatos"></tbody>
+            <tfoot>
+                <tr>
+                    <td>Número de pedido</td>
+                    <td>Código de artículo</td>
+                    <td>Descripción</td>
+                    <td>Unidad de medida</td>
+                    <td>Cantidad</td>
+                    <td>Precio unitario</td>
+                    <td>Comprobante PDF</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <span id="estado" role="status">Tabla vacía</span>
+        <a href="../index.html">Volver a Especiales</a>
+    </footer>
+    </div>
+    <div id="ventanaModal" class="ventanaModalApagado" role="dialog" aria-modal="true" aria-labelledby="tituloModal" hidden>
+        <header class="encabezadoModal">
+            <h2 id="tituloModal">Formulario para ALTA · Renglones de pedido</h2>
+            <button id="cerrar" type="button" aria-label="Cerrar ventana modal">X</button>
+        </header>
+        <main>
+        <form id="formulario">
+            <div class="campo">
+                <label for="NroDePedido">Número de pedido:</label>
+                <input id="NroDePedido" name="NroDePedido" type="text" required>
+            </div>
+            <div class="campo">
+                <label for="Cod_articulo">Código de artículo:</label>
+                <input id="Cod_articulo" name="Cod_articulo" type="text" required>
+            </div>
+            <div class="campo">
+                <label for="Descripcion">Descripción:</label>
+                <input id="Descripcion" name="Descripcion" type="text" required>
+            </div>
+            <div class="campo">
+                <label for="codUM">Unidad de medida:</label>
+                <select id="codUM" name="codUM" required></select>
+            </div>
+            <div class="campo">
+                <label for="Cantidad">Cantidad:</label>
+                <input id="Cantidad" name="Cantidad" type="number" min="0.01" step="0.01" required>
+            </div>
+            <div class="campo">
+                <label for="PrecioUnitario">Precio unitario:</label>
+                <input id="PrecioUnitario" name="PrecioUnitario" type="number" min="0" step="0.01" required>
+            </div>
+            <div class="campo">
+                <label for="Pdf_comprobante">Comprobante PDF:</label>
+                <input id="Pdf_comprobante" name="Pdf_comprobante" type="file" accept=".pdf,application/pdf" required>
+            </div>
+            <div class="campo accion"><button type="submit">ENVIAR</button></div>
+            <p id="resultado" role="status"></p>
+        </form>
+        </main>
+        <footer>Pie del formulario</footer>
+    </div>
+</body>
+
+</html>
