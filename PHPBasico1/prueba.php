@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Prueba de PHP</title>
@@ -7,6 +8,7 @@
     <script src="../navegacion/secciones.js" defer></script>
     <script src="../navegacion/menu.js" defer></script>
 </head>
+
 <body>
     <h1>Trabajo práctico de PHP</h1>
 
@@ -18,4 +20,5 @@
     echo "<p>Resultado de 4 + 3: " . (4 + 3) . "</p>";
     ?>
 </body>
+
 </html>
