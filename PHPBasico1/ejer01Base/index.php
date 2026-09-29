@@ -3,6 +3,7 @@ require_once __DIR__ . '/../comun.php';
 ?><!DOCTYPE html>
 <html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PHP básico: variables, arreglos y operaciones</title><link rel="stylesheet" href="../estilo.css">
+<style>.variables .variable { color: blue; }</style>
 <script src="../../navegacion/secciones.js" defer></script><script src="../../navegacion/menu.js" defer></script></head>
 <body><main><h1>PHP básico: variables, arreglos y operaciones</h1>
 <p>Este párrafo está fuera del bloque PHP y se envía directamente al navegador.</p>
@@ -10,19 +11,21 @@ require_once __DIR__ . '/../comun.php';
 // Una línea de comentario.
 /* Un comentario que puede ocupar varias líneas. */
 # Otra forma de comentar.
-echo "<p style='color:green'>Este párrafo HTML fue generado con echo.</p>";
+echo "<p style='color:green'>Este parrafo HTML fue generado con echo.</p>";
 $variableA = 'valor1'; $variableB = 3; $variableC = 3;
 $variableD = $variableB + $variableC;
 $verdadero = true; $falso = false;
 define('MICONSTANTE', 'valorConstante');
 ?>
 <h2>Variables y tipos</h2>
-<table><tr><th>Variable</th><th>Valor</th><th>Tipo</th></tr>
+<section class="variables">
 <?php foreach (['variableA'=>$variableA, 'variableB'=>$variableB, 'variableC'=>$variableC, 'variableD'=>$variableD, 'verdadero'=>$verdadero, 'falso'=>$falso] as $nombre=>$valor): ?>
-<tr><td><?= h('$' . $nombre) ?></td><td><?= h(is_bool($valor) ? ($valor ? 'true' : 'false') : $valor) ?></td><td><?= h(gettype($valor)) ?></td></tr>
-<?php endforeach; ?></table>
-<p><?php echo "\$variableA = " . $variableA; ?>. El punto concatena texto y valores.</p>
-<p>La suma de $variableB y $variableC es <?= $variableD ?>.</p>
+<p><strong>El valor de <span class="variable"><?= h('$' . $nombre) ?></span> es:</strong> <?= h(is_bool($valor) ? ($valor ? 'true' : 'false') : $valor) ?></p>
+<p><strong>El tipo de <span class="variable"><?= h('$' . $nombre) ?></span> es:</strong> <?= h(gettype($valor)) ?></p>
+<?php endforeach; ?>
+<p><strong><span class="variable">$variableA</span> =</strong> <?= h($variableA) ?>. <strong>El punto concatena texto y valores.</strong></p>
+<p><strong>La suma de <span class="variable">$variableB</span> y <span class="variable">$variableC</span> es:</strong> <?= $variableD ?>.</p>
+</section>
 <p>Al imprimir booleanos con echo: true produce «<?= $verdadero ?>» y false produce «<?= $falso ?>».</p>
 <p>MICONSTANTE = <?= h(MICONSTANTE) ?>; tipo: <?= gettype(MICONSTANTE) ?>.</p>
 <h2>Arreglos de índice numérico</h2>
