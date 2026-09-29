@@ -41,7 +41,8 @@
         { nombre: "Html", secciones: [0] },
         { nombre: "Css", secciones: [1, 2] },
         { nombre: "Jscript", secciones: [3, 4] },
-        { nombre: "especiales", secciones: [5] }
+        { nombre: "especiales", secciones: [5] },
+        { nombre: "PHPBasico1", secciones: [6] }
     ];
     let seleccion = null;
     let botonActivo = null;
@@ -71,7 +72,7 @@
     seccionesNavegacion.forEach(function (seccion) {
         let grupo = document.createElement("section");
         let titulo = document.createElement("h2");
-        titulo.textContent = seccion.links[1].path.split("/").slice(0, -2).join(" / ");
+        titulo.textContent = seccion.label;
         grupo.appendChild(titulo);
         let lista = document.createElement("ul");
         seccion.links.forEach(function (item) {

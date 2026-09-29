@@ -224,5 +224,38 @@ let seccionesNavegacion = [
                 "path": "especiales/esp20TablaFormulario/index.html"
             }
         ]
-    }
+    },
+{
+    "label": "PHP · Parte 1",
+    "links": [
+        {
+            "label": "Índice de PHP · Parte 1",
+            "path": "PHPBasico1/index.php"
+        },
+        {
+            "label": "Prueba de PHP",
+            "path": "PHPBasico1/prueba.php"
+        },
+        {
+            "label": "Variables, arreglos y operaciones",
+            "path": "PHPBasico1/ejer01Base/index.php"
+        },
+        {
+            "label": "Include: archivos separados",
+            "path": "PHPBasico1/ejer02inc/index.php"
+        },
+        {
+            "label": "Variables del servidor",
+            "path": "PHPBasico1/ejer05MuestraVariablesServidor/index.php"
+        },
+        {
+            "label": "Objetos y JSON",
+            "path": "PHPBasico1/ejer06VariablesObjeto/index.php"
+        },
+        {
+            "label": "Formularios GET y POST",
+            "path": "PHPBasico1/ejer10Formulario/index.php"
+        }
+    ]
+}
 ];
